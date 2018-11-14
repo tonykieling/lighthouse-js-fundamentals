@@ -1,9 +1,17 @@
-function sayHello(name = "unknown name") {
-  console.log("Hello, " + name);
+// function sayHello(name = "unknown name") {
+//   console.log("Hello, " + name);
+// }
+
+// sayHello("fulano");
+// sayHello("Caliban");
+// sayHello("Miranda");
+// sayHello("Ferdinand");
+// sayHello();
+
+function returnSayHello(name) {
+  console.log ("this function 'doesnt' print")
+  return "Hello, " + name;
 }
 
-sayHello("fulano");
-sayHello("Caliban");
-sayHello("Miranda");
-sayHello("Ferdinand");
-sayHello();
+var greeting = returnSayHello('John');
+console.log(greeting);
